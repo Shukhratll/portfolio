@@ -1,0 +1,202 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-width: 1200px;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+.wrapper {
+    background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
+    padding: 26px 0px 142px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 55px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.img-header {}
+
+.menu li {
+    margin-left: 145px;
+}
+
+.menu__list-item {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E4E4E4;
+    transition: all 0.5s ease;
+
+}
+
+.menu__list-item:hover {
+    border-bottom: 1px solid gold;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    color: #E4E4E4;
+    margin-bottom: 30px;
+    width: 205px;
+
+}
+
+.title-name {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 82px;
+    display: flex;
+    align-items: center;
+
+    /* text */
+
+    color: #E4E4E4;
+    margin-bottom: 27px;
+    width: 480px;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    color: #E4E4E4;
+    width: 430px;
+    margin-bottom: 45px;
+
+
+}
+
+.btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    align-items: center;
+    color: #000000;
+    background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
+    box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+    border-radius: 6px;
+    padding: 14px 55px;
+
+
+}
+
+.photo {
+    margin-top: -440px;
+    width: 500px;
+    margin-left: auto;
+}
+
+.footer {
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    padding: 50px 0px 50px;
+}
+
+.footer-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    text-align: center;
+    color: #E4E4E4;
+    margin-bottom: 30px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social a {
+    margin-left: 30px;
+}
